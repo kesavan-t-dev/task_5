@@ -1,0 +1,43 @@
+Create and Write Three Types of Temp Tables
+
+--- 1. Temporary Table
+
+1. Drop Table If Already Exist add condition.
+
+2. Create a Local Temporary Table:
+Name: #LocalTempTable
+Columns: ID (INT, Identity), Name (NVARCHAR(100)), StartDate (DATE), Priority (nvarchar(20))
+
+3. Insert Sample Data:
+insert the record from Task Table which have priority low.
+
+4. Query the Table:
+Retrieve all rows from the temporary table.
+
+
+--- 2. Global Temporary Table
+
+1. Drop Table If Already Exist add condition.
+
+2. Create a Global Temporary Table:
+Name: ##GlobalTempTable
+Columns: ID (INT, Identity), ProjectName (VARCHAR(100)), Budget (DECIMAL(18, 2)), Priority (Nvarchar(20))
+
+3. Insert Sample Data:
+insert the record from Task Table which have priority medium.
+
+4. Query the Table:
+Retrieve all rows from the global temporary table.
+
+--- 3. Table Variable
+
+1. Declare a Table Variable:
+
+Name: @TableVariable
+Columns: TaskID (INT, Identity), TaskName (VARCHAR(100)), DueDate (DATE), Priority (Nvarchar(20))
+
+2. Insert Sample Data:
+insert the record from Task Table which have priority High.
+
+3.Query the Table Variable:
+Retrieve all rows from the table variable.
