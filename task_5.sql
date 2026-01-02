@@ -17,7 +17,7 @@ Columns: ID (INT, Identity), Name (NVARCHAR(100)), StartDate (DATE), Priority (n
 CREATE TABLE #LocalTempTable
 (
     id INT IDENTITY(1,1),
-    Name NVARCHAR(100),
+    names NVARCHAR(100),
     start_dates DATE,
     Prioritys NVARCHAR(20)
 );
@@ -26,7 +26,7 @@ CREATE TABLE #LocalTempTable
 3. Insert Sample Data:
 insert the record from Task Table which have priority low.
 */
-INSERT INTO #LocalTempTable (Name, start_dates, Prioritys)
+INSERT INTO #LocalTempTable (names, start_dates, Prioritys)
 SELECT
     task_name,
     starts_date,
